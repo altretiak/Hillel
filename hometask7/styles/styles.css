@@ -1,0 +1,109 @@
+body {
+    width: 100vh;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.block {
+    position: relative;
+    top: 0%;
+    left: 50%;
+}
+
+.greenrectangle {
+    width: 350px;
+    height: 200px;
+    background-color: aquamarine;
+    position: relative;
+    top: 0px;
+    border: 5px solid white;
+}
+
+.orangerectangle {
+    top: 0px;
+    width: 150px;
+    height: 400px;
+    background-color: orange;
+    position: absolute;
+    left: 350px;
+    border: 5px solid white;
+}
+
+.bluerectangle {
+    width: 350px;
+    height: 200px;
+    background-color: darkslateblue;
+    position: absolute;
+    top: 200px;
+    border: 5px solid white;
+}
+
+.whiterectangle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    color: darkslateblue;
+    top: 150px;
+    left: 40%;
+}
+
+h2 {
+    position: relative;
+    top: 50%;
+}
+
+.greenrectangle__content {
+    position: sticky;
+    top: 100px;
+}
+
+.zindex {
+    position: relative;
+    top: 500px;
+    left: 50%;
+}
+
+.rec {
+    width: 210px;
+    height: 80px;
+    border: 1px solid black;
+    color: #000;
+    text-align: center;
+}
+
+.rec1 {
+    background-color: yellow;
+    z-index: 3;
+    position: relative;
+}
+
+.rec2 {
+    background-color: blue;
+    top: 0px;
+    left: 110px;
+    z-index: 1;
+    position: absolute;
+}
+
+.rec3 {
+    background-color: green;
+    top: 60px;
+    left: 0px;
+    z-index: 0;
+    position: absolute;
+}
+
+.rec4 {
+    background-color: red;
+    top: 60px;
+    left: 110px;
+    z-index: 2;
+    position: absolute;
+}
+
+p {
+    position: relative;
+    top: 50%;
+}
