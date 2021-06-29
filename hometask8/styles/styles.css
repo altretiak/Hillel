@@ -1,0 +1,103 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.floats {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.floats__header {
+    background-color: rgba(19, 69, 143, 0.664);
+    height: 15%;
+    width: 100%;
+    border: 2px solid white;
+    float: left;
+}
+
+.floats__sidemain {
+    background-color: indianred;
+    height: 70%;
+    width: 20%;
+    border: 2px solid white;
+    float: left;
+}
+
+.floats__maincontent {
+    background-color: lawngreen;
+    height: 70%;
+    width: 60%;
+    border: 2px solid white;
+    float: left;
+}
+
+.floats__sidebar {
+    background-color: indianred;
+    height: 70%;
+    width: 20%;
+    border: 2px solid white;
+    float: left;
+}
+
+.floats__footer {
+    background-color: rgba(37, 117, 236, 0.664);
+    height: 15%;
+    width: 100%;
+    border: 2px solid white;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#wraper {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 4px;
+}
+
+.inlineblock {
+    display: inline-block;
+    border: 2px solid white;
+    margin-left: -4px;
+}
+
+.header {
+    background-color: rgba(19, 69, 143, 0.664);
+    height: 15%;
+    width: 100%;
+}
+
+.sidemain {
+    background-color: indianred;
+    height: 70%;
+    width: 20%;
+}
+
+.maincontent {
+    background-color: lawngreen;
+    height: 70%;
+    width: 60%;
+}
+
+.sidebar {
+    background-color: indianred;
+    height: 70%;
+    width: 20%;
+}
+
+.footer {
+    background-color: rgba(37, 117, 236, 0.664);
+    height: 15%;
+    width: 100%;
+}
