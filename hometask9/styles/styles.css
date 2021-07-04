@@ -1,0 +1,103 @@
+.container {
+    position: relative;
+    overflow-x: hidden;
+    background-color: rgb(218, 214, 214);
+    margin-bottom: 10px;
+    /* text-align: left;*/
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.about {
+    background-color: white;
+    padding: 2%;
+    width: calc( 100% - 10px);
+    margin-bottom: 2%;
+    display: inline-block;
+}
+
+.company {
+    background-color: white;
+    padding: 2%;
+    width: calc( 100% - 10px);
+    margin-bottom: 2%;
+    display: inline-block;
+}
+
+.servises {
+    background-color: white;
+    padding: 2%;
+    width: calc( 100% - 10px);
+    margin-bottom: 2%;
+    display: inline-block;
+}
+
+.main {
+    height: 100%;
+    margin-left: 10px;
+}
+
+.content {
+    background-color: white;
+    padding: 2%;
+    width: calc( 100% - 10px);
+    display: inline-block;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 2%;
+    width: calc( 100% - 10px);
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.nav {
+    background-color: rgb(218, 214, 214);
+    padding: 2%;
+    width: 100%;
+    display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        font-size: larger;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        width: calc(100% - 18px);
+    }
+    .about {
+        width: calc(100%/3 - 10px);
+    }
+    .company {
+        background-color: white;
+        width: calc(100%/3 - 10px);
+        margin-left: 10px;
+    }
+    .servises {
+        background-color: white;
+        width: calc(100%/3 - 10px);
+        margin-left: 10px;
+    }
+    .main {
+        width: calc(100% - 16px);
+        position: relative;
+    }
+    .content {
+        width: 70%;
+        height: 100%;
+    }
+    .sidebar {
+        width: calc(30% - 6px);
+        height: 100%;
+        position: absolute;
+    }
+}
