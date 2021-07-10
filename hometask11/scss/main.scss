@@ -1,0 +1,90 @@
+@import './_reset';
+$cornflowerblue: cornflowerblue;
+$purple: rgb(160, 4, 147);
+$margin-left: 15px;
+.container {
+    position: relative;
+    overflow-x: hidden;
+    background-color: $purple;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.block {
+    background-color: $cornflowerblue;
+    margin-left: $margin-left;
+    text-align: center;
+    width: calc(100% - 30px);
+}
+
+.block__block1 {
+    border: 1px solid black;
+    width: 100%;
+    height: 300px;
+}
+
+.block__block2 {
+    border: 1px solid black;
+    width: 100%;
+    height: 300px;
+}
+
+.sidebar {
+    border: 1px solid black;
+    margin-left: $margin-left;
+    margin-bottom: 20px;
+    width: calc(100% - 30px);
+    height: 70px;
+}
+
+@media (min-width: 580px) and (max-width: 1023px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block {
+        width: calc(60% - 15px);
+        height: 80vh;
+    }
+    .block__block1 {
+        height: 40vh;
+    }
+    .block__block2 {
+        height: 40vh;
+    }
+    .sidebar {
+        width: calc(40% - 30px);
+        height: 80vh;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block {
+        width: calc(70% - 30px);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block__block1 {
+        width: 50%;
+        height: 80vh;
+    }
+    .block__block2 {
+        width: 50%;
+        height: 80vh;
+    }
+    .sidebar {
+        width: calc(30% - 15px);
+        height: 80vh;
+        margin-bottom: 0px;
+    }
+}
