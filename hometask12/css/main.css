@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@keyframes red_animation {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: red;
+  }
+  51% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+@keyframes yellow_animation {
+  0% {
+    background-color: grey;
+  }
+  30% {
+    background-color: grey;
+  }
+  31% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: yellow;
+  }
+  51% {
+    background-color: grey;
+  }
+  80% {
+    background-color: grey;
+  }
+  81% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+@keyframes green_animation {
+  0% {
+    background-color: grey;
+  }
+  50% {
+    background-color: grey;
+  }
+  51% {
+    background-color: green;
+  }
+  70% {
+    background-color: green;
+  }
+  71% {
+    background-color: grey;
+  }
+  72% {
+    background-color: grey;
+  }
+  73% {
+    background-color: green;
+  }
+  75% {
+    background-color: green;
+  }
+  76% {
+    background-color: grey;
+  }
+  77% {
+    background-color: grey;
+  }
+  78% {
+    background-color: green;
+  }
+  80% {
+    background-color: green;
+  }
+  81% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: orange;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.traffic {
+  position: relative;
+  margin-top: 5%;
+}
+
+.traffic__top {
+  min-height: 70vh;
+  width: 30%;
+  background-color: black;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  margin-left: 35%;
+  position: relative;
+}
+
+.traffic__pillar {
+  width: 6%;
+  min-height: 30vh;
+  background-color: black;
+  margin-left: 47%;
+}
+
+.circle {
+  position: relative;
+  margin-top: 10%;
+}
+
+.circle__red {
+  background-color: grey;
+  border: 5px solid red;
+  border-radius: 20%;
+  width: 50%;
+  min-height: 20vh;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  margin: auto;
+  margin-bottom: 5%;
+  animation-name: red_animation;
+  animation-duration: 14s;
+  animation-fill-mode: none;
+  animation-iteration-count: 30;
+}
+
+.circle__yellow {
+  background-color: grey;
+  border: 5px solid yellow;
+  width: 50%;
+  min-height: 20vh;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: auto;
+  margin-bottom: 5%;
+  animation-name: yellow_animation;
+  animation-duration: 14s;
+  animation-fill-mode: none;
+  animation-iteration-count: 30;
+}
+
+.circle__green {
+  background-color: grey;
+  border: 5px solid green;
+  width: 50%;
+  min-height: 20vh;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: auto;
+  margin-bottom: 5%;
+  animation-name: green_animation;
+  animation-duration: 14s;
+  animation-fill-mode: none;
+  animation-iteration-count: 30;
+}
