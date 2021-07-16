@@ -184,7 +184,7 @@ body {
   background-color: grey;
   border: 5px solid red;
   width: 20vw;
-  min-height: 20vh;
+  min-height: 20vw;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -202,7 +202,7 @@ body {
   background-color: grey;
   border: 5px solid yellow;
   width: 20vw;
-  min-height: 20vh;
+  min-height: 20vw;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -220,7 +220,7 @@ body {
   background-color: grey;
   border: 5px solid green;
   width: 20vw;
-  min-height: 20vh;
+  min-height: 20vw;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
