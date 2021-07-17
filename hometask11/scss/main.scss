@@ -1,7 +1,6 @@
 @import './_reset';
 $cornflowerblue: cornflowerblue;
 $purple: rgb(160, 4, 147);
-$margin-left: 15px;
 html {
     height: 100%;
 }
@@ -11,10 +10,20 @@ body {
     height: 100%;
 }
 
+main {
+    @media (min-width: 580px) and (max-width: 1023px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .container {
     position: relative;
     overflow-x: hidden;
-    width: 100%;
 }
 
 h1 {
@@ -22,76 +31,59 @@ h1 {
     margin: 10px;
 }
 
+p {
+    padding: 0 0 20px 0;
+}
+
 .block {
     background-color: $cornflowerblue;
-    margin-left: $margin-left;
     text-align: center;
-    width: calc(100% - 30px);
-}
-
-.block__block1 {
-    border: 1px solid black;
-    width: 100%;
-    height: 300px;
-}
-
-.block__block2 {
-    border: 1px solid black;
-    width: 100%;
-    height: 300px;
-}
-
-.sidebar {
-    border: 1px solid black;
-    margin-left: $margin-left;
-    margin-bottom: 20px;
-    width: calc(100% - 30px);
-    min-height: 70px;
-}
-
-@media (min-width: 580px) and (max-width: 1023px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
+    margin: 0 15px;
+    @media (min-width: 580px) and (max-width: 1023px) {
+        width: calc(60% - 20px);
+        min-height: 80vh;
     }
-    .block {
-        width: calc(60% - 15px);
-        min-height: 80%;
-    }
-    .block__block1 {
-        min-height: 40%;
-    }
-    .block__block2 {
-        min-height: 40%;
-    }
-    .sidebar {
-        width: calc(40% - 30px);
-        min-height: 80%;
-        margin-bottom: 0;
-    }
-}
-
-@media (min-width: 1024px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .block {
+    @media (min-width: 1024px) {
         width: calc(70% - 30px);
         display: flex;
         flex-wrap: wrap;
     }
-    .block__block1 {
-        width: 50%;
-        min-height: 80%;
+    &__block1 {
+        border: 1px solid black;
+        width: 100%;
+        min-height: 300px;
+        @media (min-width: 580px) and (max-width: 1023px) {
+            min-height: 40vh;
+        }
+        @media (min-width: 1024px) {
+            width: 50%;
+            min-height: 40vh;
+        }
     }
-    .block__block2 {
-        width: 50%;
-        min-height: 80%;
+    &__block2 {
+        border: 1px solid black;
+        width: 100%;
+        min-height: 300px;
+        @media (min-width: 580px) and (max-width: 1023px) {
+            min-height: 40vh;
+        }
+        @media (min-width: 1024px) {
+            width: 50%;
+            min-height: 40vh;
+        }
     }
-    .sidebar {
-        width: calc(30% - 15px);
+}
+
+.sidebar {
+    border: 1px solid black;
+    margin: 0 15px;
+    margin-bottom: 20px;
+    @media (min-width: 580px) and (max-width: 1023px) {
+        width: calc(40% - 40px);
         margin-bottom: 0;
-        min-height: 80%;
+    }
+    @media (min-width: 1024px) {
+        width: calc(30% - 30px);
+        margin-bottom: 0;
     }
 }

@@ -59,63 +59,10 @@ body {
   height: 100%;
 }
 
-.container {
-  position: relative;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-h1 {
-  text-align: center;
-  margin: 10px;
-}
-
-.block {
-  background-color: cornflowerblue;
-  margin-left: 15px;
-  text-align: center;
-  width: calc(100% - 30px);
-}
-
-.block__block1 {
-  border: 1px solid black;
-  width: 100%;
-  height: 300px;
-}
-
-.block__block2 {
-  border: 1px solid black;
-  width: 100%;
-  height: 300px;
-}
-
-.sidebar {
-  border: 1px solid black;
-  margin-left: 15px;
-  margin-bottom: 20px;
-  width: calc(100% - 30px);
-  min-height: 70px;
-}
-
 @media (min-width: 580px) and (max-width: 1023px) {
   main {
     display: flex;
     flex-wrap: wrap;
-  }
-  .block {
-    width: calc(60% - 15px);
-    min-height: 80%;
-  }
-  .block__block1 {
-    min-height: 40%;
-  }
-  .block__block2 {
-    min-height: 40%;
-  }
-  .sidebar {
-    width: calc(40% - 30px);
-    min-height: 80%;
-    margin-bottom: 0;
   }
 }
 
@@ -124,22 +71,97 @@ h1 {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+  padding: 0 0 20px 0;
+}
+
+.block {
+  background-color: cornflowerblue;
+  text-align: center;
+  margin: 0 15px;
+}
+
+@media (min-width: 580px) and (max-width: 1023px) {
+  .block {
+    width: calc(60% - 20px);
+    min-height: 80vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .block {
     width: calc(70% - 30px);
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.block__block1 {
+  border: 1px solid black;
+  width: 100%;
+  min-height: 300px;
+}
+
+@media (min-width: 580px) and (max-width: 1023px) {
+  .block__block1 {
+    min-height: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .block__block1 {
     width: 50%;
-    min-height: 80%;
+    min-height: 40vh;
   }
+}
+
+.block__block2 {
+  border: 1px solid black;
+  width: 100%;
+  min-height: 300px;
+}
+
+@media (min-width: 580px) and (max-width: 1023px) {
+  .block__block2 {
+    min-height: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .block__block2 {
     width: 50%;
-    min-height: 80%;
+    min-height: 40vh;
   }
+}
+
+.sidebar {
+  border: 1px solid black;
+  margin: 0 15px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 580px) and (max-width: 1023px) {
   .sidebar {
-    width: calc(30% - 15px);
+    width: calc(40% - 40px);
     margin-bottom: 0;
-    min-height: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: calc(30% - 30px);
+    margin-bottom: 0;
   }
 }
