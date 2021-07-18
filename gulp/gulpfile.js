@@ -55,7 +55,7 @@ function dev() {
         server: './build'
     });
     watch('src/*.html', html);
-    watch('src/css/*.scss', css);
+    watch('src/scss/*.scss', css);
     watch('src/js/**/*.js', js);
     watch('src/assets/*', images);
 }
