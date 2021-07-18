@@ -54,7 +54,7 @@ html {
   height: 100%;
 }
 
-.wraper {
+body {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -64,45 +64,33 @@ html {
 
 .logo {
   background-color: #7d6001;
-  width: 80%;
   margin-top: 10px;
   padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.logo__href {
-  color: white;
 }
 
 .navigation {
   background-color: #7d6001;
-  width: 100%;
   margin-top: 10px;
   padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.container {
-  width: 100%;
-  min-height: 100vh;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-}
-
-.col-md-4 {
-  height: 20%;
-  background-color: #7d6001;
+.info {
+  padding: 15px;
 }
 
 .h1,
 .h2 {
   color: #7d6001;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.block {
+  background-color: #7d6001;
+  margin: 10px;
+  height: 20vh;
+}
+
+.content {
+  border-top: 2px dotted;
 }
