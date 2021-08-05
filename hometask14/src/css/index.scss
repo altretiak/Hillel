@@ -107,11 +107,15 @@ $purple:#323264;
 
 .main-bg {
     background: linear-gradient(228.57deg, $purple 11.93%, $purple 57.17%, #643E72 87.46%);
-    border-radius: 0px 0px 12px 12px;
-    left: 0px;
-    right: 0px;
+    border-radius: 0 0 12px 12px;
+    left: 0;
+    right: 0;
     top: 800px;
     bottom: 2551px;
+    -webkit-border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -ms-border-radius: 0 0 12px 12px;
+    -o-border-radius: 0 0 12px 12px;
 }
 
 .gradient-text {
@@ -124,13 +128,17 @@ $purple:#323264;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-size: 42px;
-    line-height: 50/42;
+    line-height: (50/42);
     padding-bottom: 68px;
 }
 
 .services {
     max-width: 1440px;
     padding: 0 20px;
+    margin: 0 auto;
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 0 30px;
+    }
     @media (min-width: 1024px) {
         padding: 0 60px;
     }
@@ -146,7 +154,7 @@ $purple:#323264;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $white;
-        opacity: 0.5;
+        opacity: .5;
         width: 79px;
         height: 17px;
         left: 60px;
@@ -159,29 +167,28 @@ $purple:#323264;
     &__row {
         display: flex;
         flex-wrap: wrap;
-        @media (min-width: 1024px) {
-            margin-left: -30px;
-        }
         @media (min-width: 768px) and (max-width: 1023px) {
             margin-left: -20px;
         }
+        @media (min-width: 1024px) {
+            margin-left: -20px;
+            padding-bottom: 20px;
+        }
         &__col {
-            width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             @media (min-width: 768px) {
-                width: calc(50% - 20px);
-                margin-left: 20px;
-                margin-bottom: 20px;
+                width: calc(50% - 40px);
+                margin: 0 20px 40px;
             }
             @media (min-width: 1024px) {
                 width: calc(33.32% - 40px);
-                margin-left: 40px;
+                margin: 0 20px 60px;
             }
             &__content {
                 margin-bottom: 10px;
                 display: flex;
                 align-items: center;
-                &__img {
+                img {
                     height: 92px;
                     border-radius: 24px;
                     padding-right: 10px;
@@ -202,7 +209,7 @@ $purple:#323264;
                     -o-transition: color .3s ease;
                     will-change: color;
                     font-size: 24px;
-                    line-height: 28/24;
+                    line-height: (28/24);
                     color: #24A3FF;
                     text-decoration: none;
                     &:hover {
@@ -210,9 +217,9 @@ $purple:#323264;
                     }
                 }
             }
-            &__info {
+            p {
                 font-size: 18px;
-                line-height: 26/18;
+                line-height: (26/18);
                 color: $white;
             }
         }
