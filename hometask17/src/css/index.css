@@ -1,0 +1,103 @@
+@import url(./_reset.scss);
+#wraper {
+    position: relative;
+    overflow: hidden;
+}
+
+.team {
+    max-width: 1320px;
+    padding: 0 60px;
+    margin-left: 60px;
+    background-color: #F5F5FA;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__img {
+    width: 413px;
+    margin-left: -60px;
+}
+
+.team__info {
+    width: calc(100% - 413px);
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.team__info__link {
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+    -ms-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    will-change: color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21429;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+
+.team__info__link:hover {
+    color: #F0145A;
+}
+
+.team__info__gradient {
+    background-color: #F0145A;
+    background-image: linear-gradient(90deg, #F0145A, #EF8080);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 42px;
+    line-height: 1.19048;
+    margin-bottom: 20px;
+}
+
+.team__info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.16667;
+    color: #B3B3BA;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+li {
+    background-color: #24A3FF;
+    opacity: .2;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color .3s easy;
+    -webkit-transition: background-color .3s easy;
+    -moz-transition: background-color .3s easy;
+    -ms-transition: background-color .3s easy;
+    -o-transition: background-color .3s easy;
+    will-change: background-color;
+    transform: translate(-50% -50%);
+}
+
+li:hover,
+li.active {
+    background-color: #24A3FF;
+    opacity: 1;
+}
